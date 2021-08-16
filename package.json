@@ -19,20 +19,13 @@
     "@types/react-dom": "^17.0.9",
     "@types/three": "^0.130.1",
     "add": "^2.0.6",
-    "classnames": "^2.3.1",
-    "date-fns": "^2.23.0",
-    "gray-matter": "^4.0.3",
     "next": "11.0.1",
     "next-themes": "^0.0.15",
     "react": "17.0.2",
     "react-device-detect": "^1.17.0",
     "react-dom": "17.0.2",
-    "remark": "13.0.0",
-    "remark-gfm": "^2.0.0",
-    "remark-html": "13.0.1",
     "sass": "^1.35.2",
-    "three": "^0.131.3",
-    "yarn": "^1.22.11"
+    "three": "^0.131.3"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",

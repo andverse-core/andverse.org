@@ -21,7 +21,7 @@ Just create with default settings
 ```bash
 yarn
 yarn build
-pm2 start npm --name "andromeda" -- pm2start
+pm2 start npm --name "andromeda" -- start
 ```
 
 - Deploy new version

@@ -1,0 +1,106 @@
+#page-home .hero {
+  @apply relative py-8 sm:py-16;
+  > div {
+    @apply mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-6xl items-center justify-center flex flex-col;
+  }
+  h3 {
+    @apply text-4xl sm:px-16 font-light text-white uppercase;
+  }
+  .model3d {
+    @apply relative justify-self-center;
+  }
+}
+
+#page-home .features {
+  @apply relative bg-white dark:bg-gray-900 py-16 sm:py-24;
+  > div {
+    @apply mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl;
+  }
+  h2 {
+    @apply mt-2 text-3xl font-medium text-gray-900 dark:text-white tracking-tight sm:text-4xl;
+  }
+  .content {
+    @apply mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2;
+    > div {
+      @apply pt-6 flex;
+    }
+    > div > div {
+      @apply bg-gray-100 dark:bg-gray-800 rounded-2xl px-6 pb-8;
+      &:hover > div > div {
+        @apply animate-bounce;
+      }
+    }
+    > div > div > div {
+      @apply px-12 lg:px-32 relative;
+    }
+    img {
+      @apply relative -mt-32;
+    }
+  }
+  h3 {
+    @apply text-2xl sm:text-3xl font-medium text-gray-900 dark:text-white tracking-tight;
+  }
+  p {
+    @apply mt-5 text-base text-gray-500 dark:text-gray-300;
+  }
+}
+
+#page-home .protocols {
+  @apply py-16 overflow-hidden lg:py-24;
+  > div {
+    @apply relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl;
+  }
+
+  .header {
+    @apply relative;
+
+    h2 {
+      @apply text-center text-3xl leading-8 font-medium tracking-tight text-white sm:text-4xl;
+    }
+
+    p {
+      @apply mt-4 max-w-3xl mx-auto text-center text-xl text-gray-200;
+    }
+  }
+
+  .content {
+    @apply relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start;
+    > div {
+      @apply relative mt-6;
+    }
+    h3 {
+      @apply text-2xl uppercase text-white tracking-tight sm:text-3xl;
+    }
+    dl {
+      @apply mt-10 space-y-10;
+      > div {
+        @apply relative;
+        &:hover .iconbox {
+          @apply animate-pulse;
+        }
+      }
+    }
+    .iconbox {
+      @apply absolute flex items-center justify-center h-12 w-12 text-white;
+    }
+    .icon {
+      @apply h-10 w-10;
+    }
+    h4 {
+      @apply ml-16 text-xl uppercase leading-6 font-medium text-white;
+    }
+    dd {
+      @apply mt-2 ml-16 text-base text-gray-200;
+    }
+  }
+}
+
+#page-home .features,
+#page-home .protocols {
+  h2 {
+    @apply uppercase;
+    span {
+      @apply font-thin;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+html {
+  @apply text-white p-0;
+  -webkit-tap-highlight-color: transparent;
+  * {
+    // @apply transition duration-300 ease-in-out;
+  }
+}
+
+body {
+  @apply bg-white text-black;
+  @apply dark:bg-black dark:text-white;
+  *disabled {
+    @apply transition duration-150;
+  }
+}
+
+.mono {
+  @apply font-mono;
+}
+
+canvas#starfield {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100vw;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.backdrop-blur {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.overlay {
+  @apply fixed inset-0;
+  @apply bg-black bg-opacity-70 dark:bg-black dark:bg-opacity-50;
+  @extend .backdrop-blur;
+}
+
+// Nav
+#site-nav {
+  @apply bg-white dark:bg-black;
+
+  .wrapper {
+    @apply relative max-w-7xl mx-auto flex items-center justify-between py-1.5 md:py-2.5 sm:px-4 lg:px-6;
+  }
+
+  .brand {
+    @apply flex relative left-0 flex-row sm:flex-row-reverse sm:mr-3;
+    a {
+      @apply text-black;
+      @apply dark:text-white;
+    }
+  }
+
+  .desktop-menu {
+    @apply hidden sm:flex flex-grow;
+    @apply space-x-2 lg:space-x-4;
+    .item svg {
+      @apply hidden lg:inline-block;
+    }
+    .item {
+      @apply rounded-md py-2 px-3 inline-flex items-center text-sm font-medium;
+      @apply hover:bg-gray-100 text-gray-700 hover:text-gray-900;
+      @apply dark:hover:bg-gray-800 dark:text-gray-100 dark:hover:text-gray-100;
+    }
+  }
+
+  .mobile-menu {
+    @apply sm:hidden;
+    button {
+      @apply w-10 h-auto rounded-lg p-2;
+    }
+  }
+
+  .brand {
+    @apply flex-shrink-0 flex items-center;
+    img {
+      @apply lg:block h-10 w-auto sm:-ml-2;
+    }
+    a {
+      @apply flex items-center;
+      .logo {
+        @apply flex w-10 h-10 text-transparent;
+      }
+      .text {
+        @apply flex h-5 ml-2 hidden sm:inline-block;
+        @apply dark:text-white;
+      }
+    }
+  }
+
+  .extended {
+    @apply absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0;
+  }
+  .menu-2 {
+    @apply ml-3 -mx-2 relative;
+  }
+}
+
+.perfect_square_wrapper:hover img {
+  @apply object-contain;
+} // End Nav
+
+// Mobile Sidebar
+
+#mobile-sidebar {
+  @apply relative flex-1 flex flex-col max-w-xs w-full m-4 pt-5 pb-4 border-4 rounded-3xl border-yellow-400;
+  @apply bg-white;
+  @apply dark:bg-gray-900;
+  .brand {
+    @apply flex-shrink-0 flex flex-col items-center border-b pb-4;
+    @apply dark:border-gray-800;
+    > a {
+      @apply w-auto m-auto flex flex-row items-center space-x-2 pb-2;
+    }
+  }
+  nav {
+    @apply pt-5 pb-32 flex-shrink-0 h-full divide-y divide-gray-100 px-2 overflow-y-auto;
+    @apply dark:divide-gray-800;
+  }
+  .item {
+    @apply flex items-center px-2 py-2 text-base font-medium rounded-md;
+    @apply text-gray-800 hover:bg-gray-200;
+    @apply dark:text-gray-200 dark:hover:bg-gray-800;
+    &.active {
+      @apply bg-yellow-50 hover:bg-yellow-100;
+      @apply dark:bg-opacity-10 dark:hover:bg-opacity-20;
+    }
+    &.active svg {
+      @apply text-yellow-400;
+    }
+  }
+  .icon {
+    @apply mr-3 h-5 w-5 text-gray-400;
+    &.language {
+      @apply text-gray-700 inline-block;
+    }
+  }
+}
+
+.theme-toggle {
+  @apply rounded-full p-2 mr-2 transition-all duration-150;
+  @apply hover:bg-blue-800 dark:hover:bg-blue-200;
+  & .sun,
+  & .moon {
+    @apply text-2xl cursor-pointer w-6 h-6 transition-all duration-150 delay-100;
+    @apply text-gray-500 hover:text-yellow-500;
+    @apply dark:text-gray-300 dark:hover:text-red-400;
+  }
+  &:hover svg {
+    @apply transform scale-125;
+    @apply text-yellow-500;
+    @apply dark:text-red-400;
+  }
+}
+
+#site-footer {
+  @apply bg-white dark:bg-black;
+  > div {
+    @apply max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8;
+  }
+  nav {
+    @apply -mx-5 -my-2 flex flex-wrap justify-center;
+    > div {
+      @apply px-5 py-2;
+    }
+    a {
+      @apply text-base text-gray-500 hover:text-gray-900;
+      @apply dark:text-gray-400 dark:hover:text-gray-300;
+    }
+  }
+  .social {
+    @apply mt-8 flex justify-center space-x-6;
+    a {
+      @apply text-gray-400 hover:text-gray-500;
+      @apply dark:text-gray-400 dark:hover:text-gray-300;
+      span {
+        @apply sr-only;
+      }
+      svg {
+        @apply h-6 w-6;
+      }
+    }
+  }
+  > div > p {
+    @apply mt-8 text-center text-base text-gray-400;
+  }
+}

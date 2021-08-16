@@ -9,7 +9,7 @@ import { SiteLogo, SiteLogoText } from 'icons'
 const navItems = [
   { name: 'Home', href: '/', icon: HomeIcon, exact: true },
   { name: 'Market', href: '/market', icon: ShoppingBagIcon, exact: false },
-  { name: 'Docs', href: '/docs', icon: DocumentTextIcon, exact: false }
+  { name: 'Docs', href: 'https://docs.andverse.org', icon: DocumentTextIcon, exact: false }
 ]
 
 export default function Navi() {

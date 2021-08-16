@@ -1,5 +1,4 @@
 import Footer from 'layouts/Footer'
-import Meta from './meta'
 import Header from 'layouts/Header'
 
 type Props = {
@@ -10,7 +9,6 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
   return (
     <>
-      <Meta />
       <Header />
       <div className="min-h-screen">
         <main>{children}</main>

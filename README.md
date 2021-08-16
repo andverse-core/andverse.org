@@ -1,4 +1,4 @@
-## NextJS + TS + TailwindCSS Boilerplate
+## Andromeda Metaverse
 
 ## Getting Started
 

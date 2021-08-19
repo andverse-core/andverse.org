@@ -30,7 +30,7 @@ class Home extends Component {
 export default Home
 
 const pageSettings = {
-  title: '404 - Andromeda Metavers',
+  title: '404 - Andromeda Metaverse',
   description: ''
 }
 

@@ -22,7 +22,7 @@ function Page() {
 export default Page
 
 const pageSettings = {
-  title: 'Explorer - Andromeda Metavers',
+  title: 'Explorer - Andromeda Metaverse',
   description: ''
 }
 

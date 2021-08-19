@@ -22,7 +22,7 @@ function Page() {
 export default Page
 
 const pageSettings = {
-  title: 'Market - Andromeda Metavers',
+  title: 'Market - Andromeda Metaverse',
   description: ''
 }
 

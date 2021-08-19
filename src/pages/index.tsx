@@ -49,7 +49,7 @@ class Page extends Component {
 export default Page
 
 const pageSettings = {
-  title: 'Andromeda Metavers',
+  title: 'Andromeda Metaverse',
   description: ''
 }
 

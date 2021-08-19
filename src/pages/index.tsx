@@ -57,33 +57,33 @@ const featuresItems = [
   {
     name: 'Metaverse',
     icon: Galaxy,
-    desc: 'Planets exist in the Andromeda Metaverse to be exploered. Planet Zero will be the first planet we are developing.',
+    description: 'Andromeda Metaverse(Andverse) brings new expericence to the next blockchain world to embrace a fully decentralized digital life.',
     animation: 'home-spin'
   },
   {
     name: 'Planet Zero',
     icon: Planet,
-    desc: 'Planets exist in the Andromeda Metaverse to be exploered. Planet Zero will be the first planet we are developing.'
+    description: 'Planets exist in the Andromeda Metaverse to be exploered. Planet Zero will be the first planet we are developing.'
   },
   {
     name: 'Lands',
     icon: Land,
-    desc: 'Own lands and transform to a lake, build your own disctrict, create a park or build a museum on top of it.'
+    description: 'Own lands and transform to a lake, build your own disctrict, create a park or build a museum on top of it.'
   },
   {
     name: 'Buildings',
     icon: Buildings,
-    desc: 'Design your dream building, show it to others, display your collectibles inside, or rent a space to others to decorate their own.'
+    description: 'Design your dream building, show it to others, display your collectibles inside, or rent a space to others to decorate their own.'
   },
   {
     name: 'Own A Shop',
     icon: Shop,
-    desc: 'Your own shop to sell lands, buildings, avatars in the metaverse. Mint your own NFTs display and sell in the shop you owned.'
+    description: 'Your own shop to sell lands, buildings, avatars in the metaverse. Mint your own NFTs display and sell in the shop you owned.'
   },
   {
     name: 'DID & Avatars',
     icon: Avatars,
-    desc: 'Dencentralized Identity with customable avatar to create your own apperance in the next gen world.'
+    description: 'Dencentralized Identity with customable avatar to create your own apperance in the next gen world.'
   }
 ]
 
@@ -183,7 +183,7 @@ function Features() {
                   />
                 </div>
                 <h3>{feature.name}</h3>
-                <p>{feature.desc}</p>
+                <p>{feature.description}</p>
               </div>
             </div>
           ))}

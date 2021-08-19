@@ -8,6 +8,9 @@ import Planet from 'assets/licensed/planet.png'
 import Land from 'assets/licensed/lands.png'
 import Buildings from 'assets/licensed/buildings.png'
 import Avatars from 'assets/licensed/avatars.png'
+import Galaxy from 'assets/licensed/galaxy.png'
+import Shop from 'assets/licensed/shop.png'
+import { SiteLogo } from 'icons'
 
 import {
   SwitchHorizontalIcon,
@@ -52,6 +55,12 @@ const pageSettings = {
 
 const featuresItems = [
   {
+    name: 'Metaverse',
+    icon: Galaxy,
+    desc: 'Planets exist in the Andromeda Metaverse to be exploered. Planet Zero will be the first planet we are developing.',
+    animation: 'home-spin'
+  },
+  {
     name: 'Planet Zero',
     icon: Planet,
     desc: 'Planets exist in the Andromeda Metaverse to be exploered. Planet Zero will be the first planet we are developing.'
@@ -65,6 +74,11 @@ const featuresItems = [
     name: 'Buildings',
     icon: Buildings,
     desc: 'Design your dream building, show it to others, display your collectibles inside, or rent a space to others to decorate their own.'
+  },
+  {
+    name: 'Own A Shop',
+    icon: Shop,
+    desc: 'Your own shop to sell lands, buildings, avatars in the metaverse. Mint your own NFTs display and sell in the shop you owned.'
   },
   {
     name: 'DID & Avatars',
@@ -130,13 +144,14 @@ const protocolsItems = {
 function Main() {
   const ref = useRef()
   return (
-    <main>
+    <main className="bg-black bg-opacity-50">
       <div id="starfield-focus"></div>
       <canvas id="starfield"></canvas>
 
       <div className="hero">
-        <div className="my-[25vh]">
-          <h3>Get ready to embrace the metaverse with andromeda protocol.</h3>
+        <div className="my-[10vh]">
+          {/* <SiteLogo className="w-40 text-white home-spin mb-8" /> */}
+          <h3 className="linear-wipe">Get ready for your metaverse experience in andverse</h3>
         </div>
       </div>
 
@@ -159,7 +174,12 @@ function Features() {
             <div key={feature.name}>
               <div>
                 <div>
-                  <Image src={feature.icon} alt="" layout="responsive" />
+                  <Image
+                    src={feature.icon}
+                    alt=""
+                    layout="responsive"
+                    className={feature.animation ? feature.animation : ''}
+                  />
                 </div>
                 <h3>{feature.name}</h3>
                 <p>{feature.desc}</p>

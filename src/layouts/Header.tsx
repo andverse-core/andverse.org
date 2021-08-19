@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       <Meta />
-      <header className="main">
+      <header>
         <Navi />
       </header>
     </>

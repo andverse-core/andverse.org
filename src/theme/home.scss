@@ -4,7 +4,7 @@
     @apply mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-6xl items-center justify-center flex flex-col;
   }
   h3 {
-    @apply text-4xl sm:px-16 font-light text-white uppercase;
+    @apply text-[32px] sm:px-16 md:text-[64px] font-normal text-white uppercase;
   }
   .model3d {
     @apply relative justify-self-center;
@@ -12,7 +12,7 @@
 }
 
 #page-home .features {
-  @apply relative bg-white dark:bg-gray-900 py-16 sm:py-24;
+  @apply relative bg-gray-300 dark:bg-gray-900 py-16 sm:py-24;
   > div {
     @apply mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl;
   }
@@ -20,18 +20,21 @@
     @apply mt-2 text-3xl font-medium text-gray-900 dark:text-white tracking-tight sm:text-4xl;
   }
   .content {
-    @apply mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2;
+    @apply mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3;
     > div {
-      @apply pt-6 flex;
-    }
-    > div > div {
-      @apply bg-gray-100 dark:bg-gray-800 rounded-2xl px-6 pb-8;
-      &:hover > div > div {
-        @apply animate-bounce;
+      @apply flex;
+      &:hover {
+@apply hover:scale-110 transition-transform duration-200;
       }
     }
+    > div > div {
+      @apply bg-gray-100 dark:bg-gray-800 bg-opacity-25 hover:bg-opacity-100 dark:bg-opacity-25 dark:hover:bg-opacity-100 rounded-2xl px-6 pb-8 filter saturate-[0.75] hover:saturate-100;
+      &:hover > div > div {
+        @apply scale-[1.3] transition duration-500 -top-5;
+        }
+    }
     > div > div > div {
-      @apply px-12 lg:px-32 relative;
+      @apply px-4 md:px-8 relative;
     }
     img {
       @apply relative -mt-32;
@@ -104,3 +107,54 @@
     }
   }
 }
+
+.home-spin {
+  animation-name: spin;
+  animation-duration: 15000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.linear-wipe {
+  background: linear-gradient(to right, #6b00a1 20%, #005dff 40%, #6b00a1 60%, #005dff 80%, #6b00a1 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+
+#page-home #site-nav {
+  @apply bg-opacity-0 dark:bg-opacity-0;
+  .brand {
+    a {
+      @apply text-white;
+    }
+  }
+  .desktop-menu {
+    .item {
+      @apply hover:bg-gray-800 text-gray-100 hover:text-gray-100;
+    }
+  }
+  .mobile-menu {
+    button {
+      @apply text-white;
+    }
+  }
+}
+

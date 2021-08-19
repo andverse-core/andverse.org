@@ -4,7 +4,7 @@ import Link from 'next/link'
 const footerNavigation = {
   main: [
     { name: 'Home', href: '/' },
-    { name: 'Documentation', href: '/docs' }
+    { name: 'Documentation', href: 'https://docs.andromeda.org' }
   ],
   social: [
     {
@@ -60,27 +60,47 @@ const footerNavigation = {
 
 export default function Footer() {
   return (
-    <footer id="site-footer">
-      <div>
-        <nav aria-label="Footer">
-          {footerNavigation.main.map(item => (
-            <div key={item.name}>
-              <a href={item.href}>{item.name}</a>
-            </div>
-          ))}
-        </nav>
-        <div className="social">
-          {footerNavigation.social.map(item => (
-            <Link href={item.href} key={item.name}>
-              <a>
-                <span>{item.name}</span>
-                <item.icon aria-hidden="true" />
-              </a>
-            </Link>
-          ))}
+    <>
+      <footer id="site-footer">
+        <div>
+          <nav aria-label="Footer">
+            {footerNavigation.main.map(item => (
+              <div key={item.name}>
+                <a href={item.href}>{item.name}</a>
+              </div>
+            ))}
+          </nav>
+          <div className="social">
+            {footerNavigation.social.map(item => (
+              <Link href={item.href} key={item.name}>
+                <a>
+                  <span>{item.name}</span>
+                  <item.icon aria-hidden="true" />
+                </a>
+              </Link>
+            ))}
+          </div>
+          <p>&copy; 2021 {SITE_NAME}.</p>
         </div>
-        <p>&copy; 2021 {SITE_NAME}.</p>
-      </div>
-    </footer>
+      </footer>
+      <section className="w-full p-5 lg:px-24 fixed bottom-0 hidden">
+        <div className="p-5 rounded-xl md:flex items-center -mx-3 bg-gray-600">
+          <div className="md:flex-1 px-3 mb-5 md:mb-0">
+            <p className="text-center md:text-left text-white text-xs leading-tight md:pr-12">
+              This site is using cookies to store your preferences in your browser. This site is not using javascript or
+              cookies to track your activities.
+            </p>
+          </div>
+          <div className="px-3 text-center">
+            <button
+              id="btn"
+              className="py-2 px-8 bg-green-400 hover:bg-green-500 text-white rounded font-bold text-sm shadow-xl"
+            >
+              Acknowledge
+            </button>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

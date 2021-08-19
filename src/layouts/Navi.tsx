@@ -3,13 +3,21 @@ import React, { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import ThemeToggle from 'layouts/themeToggle'
 
-import { HomeIcon, MenuAlt1Icon, ShoppingBagIcon, DocumentTextIcon, ArrowSmLeftIcon } from '@heroicons/react/outline'
+import {
+  HomeIcon,
+  MenuAlt1Icon,
+  ShoppingBagIcon,
+  CubeTransparentIcon,
+  DocumentTextIcon,
+  ArrowSmLeftIcon
+} from '@heroicons/react/outline'
 import { SiteLogo, SiteLogoText } from 'icons'
 
 const navItems = [
   { name: 'Home', href: '/', icon: HomeIcon, exact: true },
   { name: 'Market', href: '/market', icon: ShoppingBagIcon, exact: false },
-  { name: 'Docs', href: 'https://docs.andverse.org', icon: DocumentTextIcon, exact: false }
+  { name: 'Explorer', href: '/explorer', icon: CubeTransparentIcon, exact: false },
+  { name: 'Documentation', href: 'https://docs.andverse.org', icon: DocumentTextIcon, exact: false }
 ]
 
 export default function Navi() {

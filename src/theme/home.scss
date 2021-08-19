@@ -4,7 +4,7 @@
     @apply mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-6xl items-center justify-center flex flex-col;
   }
   h3 {
-    @apply text-[32px] sm:px-16 md:text-[64px] font-normal text-white uppercase;
+    @apply text-[48px] sm:px-16 md:text-[64px] font-normal text-white uppercase;
   }
   .model3d {
     @apply relative justify-self-center;
@@ -24,13 +24,13 @@
     > div {
       @apply flex;
       &:hover {
-        @apply hover:scale-110 transition-transform duration-200;
+        @apply hover:scale-100 md:hover:scale-110 transition-all duration-200;
       }
     }
     > div > div {
       @apply bg-gray-100 dark:bg-gray-800 bg-opacity-25 hover:bg-opacity-100 dark:bg-opacity-25 dark:hover:bg-opacity-100 rounded-2xl px-6 pb-8 filter saturate-[0.75] hover:saturate-100;
       &:hover > div > div {
-        @apply scale-[1.3] transition duration-500 -top-5;
+        @apply scale-[1.2] md:scale-[1.3] transition duration-500 -top-5;
       }
     }
     > div > div > div {

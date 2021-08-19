@@ -24,14 +24,14 @@
     > div {
       @apply flex;
       &:hover {
-@apply hover:scale-110 transition-transform duration-200;
+        @apply hover:scale-110 transition-transform duration-200;
       }
     }
     > div > div {
       @apply bg-gray-100 dark:bg-gray-800 bg-opacity-25 hover:bg-opacity-100 dark:bg-opacity-25 dark:hover:bg-opacity-100 rounded-2xl px-6 pb-8 filter saturate-[0.75] hover:saturate-100;
       &:hover > div > div {
         @apply scale-[1.3] transition duration-500 -top-5;
-        }
+      }
     }
     > div > div > div {
       @apply px-4 md:px-8 relative;
@@ -157,4 +157,3 @@
     }
   }
 }
-

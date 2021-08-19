@@ -22,7 +22,7 @@ import {
   ShieldCheckIcon
 } from '@heroicons/react/outline'
 
-class Home extends Component {
+class Page extends Component {
   componentDidMount() {
     const script = document.createElement('script')
     script.async = true
@@ -46,7 +46,7 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default Page
 
 const pageSettings = {
   title: 'Andromeda Metavers',

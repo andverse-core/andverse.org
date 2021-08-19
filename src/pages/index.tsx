@@ -144,13 +144,15 @@ const protocolsItems = {
 function Main() {
   const ref = useRef()
   return (
-    <main className="bg-black bg-opacity-50">
+    <main>
       <canvas id="starfield"></canvas>
 
       <div className="hero">
         <div className="my-[10vh]">
           {/* <SiteLogo className="w-40 text-white home-spin mb-8" /> */}
-          <h3 className="" id="starfield-focus">Get ready for your metaverse experience in andverse</h3>
+          <h3 className="" id="starfield-focus">
+            Get ready for your metaverse experience in andverse
+          </h3>
         </div>
       </div>
 

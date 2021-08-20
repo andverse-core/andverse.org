@@ -31,8 +31,9 @@ function Main() {
     <main>
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-6xl items-center justify-center flex flex-col">
         <div className="my-[10vh]">
+          <h2 className="text-3xl">Marketplace will be here soon!</h2>
           <Image src={Shop} alt="" layout="responsive" />
-          <h3 className="text-3xl">Marketplace will be here soon!</h3>
+          <p className="px-6 py-3 bg-gray-500 bg-opacity-25 rounded-xl">Images above are concept preview</p>
         </div>
       </div>
     </main>

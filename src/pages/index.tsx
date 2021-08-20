@@ -57,28 +57,33 @@ const featuresItems = [
   {
     name: 'Metaverse',
     icon: Galaxy,
-    description: 'Andromeda Metaverse(Andverse) brings new expericence to the next blockchain world to embrace a fully decentralized digital life.',
+    description:
+      'Andromeda Metaverse(Andverse) brings new expericence to the next blockchain world to embrace a fully decentralized digital life.',
     animation: 'home-spin'
   },
   {
     name: 'Planet Zero',
     icon: Planet,
-    description: 'Planets exist in the Andromeda Metaverse to be exploered. Planet Zero will be the first planet we are developing.'
+    description:
+      'Planets exist in the Andromeda Metaverse to be exploered. Planet Zero will be the first planet we are developing.'
   },
   {
     name: 'Lands',
     icon: Land,
-    description: 'Own lands and transform to a lake, build your own disctrict, create a park or build a museum on top of it.'
+    description:
+      'Own lands and transform to a lake, build your own disctrict, create a park or build a museum on top of it.'
   },
   {
     name: 'Buildings',
     icon: Buildings,
-    description: 'Design your dream building, show it to others, display your collectibles inside, or rent a space to others to decorate their own.'
+    description:
+      'Design your dream building, show it to others, display your collectibles inside, or rent a space to others to decorate their own.'
   },
   {
     name: 'Own A Shop',
     icon: Shop,
-    description: 'Your own shop to sell lands, buildings, avatars in the metaverse. Mint your own NFTs display and sell in the shop you owned.'
+    description:
+      'Your own shop to sell lands, buildings, avatars in the metaverse. Mint your own NFTs display and sell in the shop you owned.'
   },
   {
     name: 'DID & Avatars',

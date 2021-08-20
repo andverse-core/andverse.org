@@ -107,7 +107,7 @@ canvas#starfield {
 // Mobile Sidebar
 
 #mobile-sidebar {
-  @apply relative flex-1 flex flex-col max-w-xs w-full m-4 pt-5 pb-4 border-4 rounded-3xl border-yellow-400;
+  @apply relative flex-1 flex flex-col max-w-xs w-full m-4 pt-5 pb-4 border-4 rounded-3xl border-gray-800;
   @apply bg-white;
   @apply dark:bg-gray-900;
   .brand {

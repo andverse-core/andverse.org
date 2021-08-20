@@ -9,7 +9,7 @@ import {
   ShoppingBagIcon,
   CubeTransparentIcon,
   DocumentTextIcon,
-  ArrowSmLeftIcon
+  XIcon
 } from '@heroicons/react/outline'
 import { SiteLogo, SiteLogoText } from 'icons'
 
@@ -92,7 +92,7 @@ export default function Navi() {
                     className="ml-2 flex items-center justify-center bg-black bg-opacity-0 dark:bg-opacity-0 focus:outline-none"
                     onClick={() => setMobileSidebarOpen(false)}
                   >
-                    <ArrowSmLeftIcon className="h-10 w-10 text-yellow-400 " />
+                    <XIcon className="h-10 w-10 text-white" />
                   </button>
                 </div>
               </Transition.Child>

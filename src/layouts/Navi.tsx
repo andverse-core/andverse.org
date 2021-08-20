@@ -17,7 +17,7 @@ const navItems = [
   { name: 'Home', href: '/', icon: HomeIcon, exact: true },
   { name: 'Market', href: '/market', icon: ShoppingBagIcon, exact: false },
   { name: 'Explorer', href: '/explorer', icon: CubeTransparentIcon, exact: false },
-  { name: 'Documentation', href: 'https://testnet.doc.andverse.org/', icon: DocumentTextIcon, exact: false }
+  { name: 'Documentation', href: 'https://testnet.docs.andverse.org/', icon: DocumentTextIcon, exact: false }
 ]
 
 export default function Navi() {

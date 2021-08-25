@@ -4,7 +4,8 @@
     @apply mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-6xl items-center justify-center flex flex-col;
   }
   h3 {
-    @apply text-[48px] sm:px-16 md:text-[64px] font-normal text-white uppercase;
+    @apply text-[48px] sm:px-16 md:text-[72px] font-extralight text-white uppercase;
+    @extend .hue_animated;
   }
   .model3d {
     @apply relative justify-self-center;
@@ -17,7 +18,8 @@
     @apply mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl;
   }
   h2 {
-    @apply mt-2 text-3xl font-medium text-gray-900 dark:text-white tracking-tight sm:text-4xl;
+    @apply mt-2 text-3xl font-medium text-gray-900 dark:text-white sm:text-4xl;
+    @extend .gradient_animation;
   }
   .content {
     @apply mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3;
@@ -39,12 +41,18 @@
     img {
       @apply relative -mt-32;
     }
-  }
-  h3 {
-    @apply text-2xl sm:text-3xl font-medium text-gray-900 dark:text-white tracking-tight;
-  }
-  p {
-    @apply mt-5 text-base text-gray-500 dark:text-gray-300;
+    h3 {
+      @apply text-2xl sm:text-3xl font-medium text-gray-900 dark:text-white;
+    }
+    p {
+      @apply mt-5 text-base text-gray-500 dark:text-gray-300;
+    }
+    div:hover h3 {
+      @extend .gradient_animation;
+    }
+    div:hover p {
+      @extend .gradient_animation;
+    }
   }
 }
 
@@ -58,7 +66,8 @@
     @apply relative;
 
     h2 {
-      @apply text-center text-3xl leading-8 font-medium tracking-tight text-white sm:text-4xl;
+      @apply text-center text-3xl leading-8 font-medium  text-white sm:text-4xl;
+      @extend .gradient_animation;
     }
 
     p {
@@ -72,7 +81,7 @@
       @apply relative mt-6;
     }
     h3 {
-      @apply text-2xl uppercase text-white tracking-tight sm:text-3xl;
+      @apply text-2xl uppercase text-white  sm:text-3xl;
     }
     dl {
       @apply mt-10 space-y-10;
@@ -81,6 +90,12 @@
         &:hover .iconbox {
           @apply animate-pulse;
         }
+      }
+      div:hover dd {
+        @extend .gradient_animation;
+      }
+      div:hover dt h4 {
+        @extend .gradient_animation;
       }
     }
     .iconbox {
@@ -155,5 +170,43 @@
     button {
       @apply text-white;
     }
+  }
+}
+
+.gradient_animation {
+  animation: flow 3s ease-in-out infinite;
+  // background: linear-gradient(-60deg, #b00ebb, #008fdc);
+  background: linear-gradient(-60deg, #b00ebb 20%, #008fdc 40%, #b00ebb 60%, #008fdc 80%, #b00ebb 100%);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.hue_animated {
+  background-image: -webkit-linear-gradient(92deg, #00a0c4, #b602e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
   }
 }

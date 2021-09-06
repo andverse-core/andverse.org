@@ -4,7 +4,7 @@ import Link from 'next/link'
 const footerNavigation = {
   main: [
     { name: 'Home', href: '/' },
-    { name: 'Documentation', href: 'https://docs.andromeda.org' }
+    { name: 'Documentation', href: '/#' }
   ],
   social: [
     {

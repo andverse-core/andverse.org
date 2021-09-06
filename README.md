@@ -21,7 +21,7 @@ Just create with default settings
 ```bash
 yarn
 yarn build
-pm2 start npm --name "andromeda" -- start
+pm2 start npm --name "andverse" -- start
 ```
 
 - Deploy new version
@@ -30,5 +30,5 @@ pm2 start npm --name "andromeda" -- start
 git pull
 yarn
 yarn build
-pm2 restart andromeda
+pm2 restart andverse
 ```

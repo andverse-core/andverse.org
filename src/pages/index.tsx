@@ -163,6 +163,7 @@ function Main() {
 
       <Features />
       <Protocols />
+      <Roadmap />
       {/* <Brands /> */}
     </main>
   )
@@ -246,6 +247,85 @@ function Protocols() {
               ))}
             </dl>
           </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function Roadmap() {
+  return (
+    <div className="roadmap">
+      <div>
+        <h2>Roadmap</h2>
+        <div className="content">
+          <section id="cd-timeline" className="cd-container">
+            <div className="cd-timeline-block">
+              <div className="cd-timeline-img cd-location"></div>
+              <div className="cd-timeline-content">
+                <h3>2021 Q4</h3>
+                <p>Land Sale (Inner City)</p>
+                <p>Protocols Development</p>
+                <p>Andverse World Infrastructure Development</p>
+                <p>3D Assets Open Co-operation</p>
+                <p>Andverse Resource Mining</p>
+              </div>
+            </div>
+
+            <div className="cd-timeline-block">
+              <div className="cd-timeline-img cd-location"></div>
+              <div className="cd-timeline-content">
+                <h3>2022 Q1</h3>
+                <p>Land Sale (Outer City)</p>
+                <p>World Environment & Buildings Development</p>
+                <p>Lands-Estates Manager Launch</p>
+                <p>New Andverse Map Generator</p>
+                <p>3D Assets Market</p>
+              </div>
+            </div>
+
+            <div className="cd-timeline-block">
+              <div className="cd-timeline-img cd-location"></div>
+              <div className="cd-timeline-content">
+                <h3>2022 Q2</h3>
+                <p>Andverse World 3D Dev Preview</p>
+                <p>Andverse World 1.0 Launch, with VR support</p>
+                <p>3D Assets Manager</p>
+                <p>Andverse 3D Buildings Growth</p>
+              </div>
+            </div>
+
+            <div className="cd-timeline-block">
+              <div className="cd-timeline-img cd-location"></div>
+              <div className="cd-timeline-content">
+                <h3>2022 Q3</h3>
+                <p>Multi-Network Support</p>
+                <p>MMO Players Link Launch</p>
+                <p>Avatar Market Launch</p>
+                <p>Custom Avatars</p>
+              </div>
+            </div>
+
+            <div className="cd-timeline-block">
+              <div className="cd-timeline-img cd-location"></div>
+              <div className="cd-timeline-content">
+                <h3>2022 Q4</h3>
+                <p>Andverse World API & SDK Release</p>
+                <p>DAO Launch</p>
+                <p>Andverse World Builder DApp</p>
+              </div>
+            </div>
+
+            <div className="cd-timeline-block">
+              <div className="cd-timeline-img cd-location"></div>
+              <div className="cd-timeline-content">
+                <h3>2023</h3>
+                <p>Programmable Assets Protocols</p>
+                <p>Interactive Protocols</p>
+                <p>Gaming Experience</p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>

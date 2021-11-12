@@ -62,10 +62,10 @@ const featuresItems = [
     animation: 'home-spin'
   },
   {
-    name: 'Planet Three',
+    name: 'Planet #3',
     icon: Planet,
     description:
-      'Planets exist in the Andromeda Metaverse to be exploered. Planet Three will be the first planet we are developing.'
+      'Planets exist in the Andromeda Metaverse to be exploered. Planet #3 will be the first planet we are developing.'
   },
   {
     name: 'Lands',
@@ -163,7 +163,7 @@ function Main() {
 
       <Features />
       <Protocols />
-      <Roadmap />
+      {/*<Roadmap />*/}
       {/* <Brands /> */}
     </main>
   )

@@ -62,10 +62,10 @@ const featuresItems = [
     animation: 'home-spin'
   },
   {
-    name: 'Planet Zero',
+    name: 'Planet Three',
     icon: Planet,
     description:
-      'Planets exist in the Andromeda Metaverse to be exploered. Planet Zero will be the first planet we are developing.'
+      'Planets exist in the Andromeda Metaverse to be exploered. Planet Three will be the first planet we are developing.'
   },
   {
     name: 'Lands',
@@ -156,7 +156,7 @@ function Main() {
         <div className="my-[10vh]">
           {/* <SiteLogo className="w-40 text-white home-spin mb-8" /> */}
           <h3 className="" id="starfield-focus">
-            Get ready for your metaverse experience in andverse
+            Andverse<br/> is a decentralized <br/>multi Galaxy metaverse
           </h3>
         </div>
       </div>
@@ -264,7 +264,7 @@ function Roadmap() {
               <div className="cd-timeline-img cd-location"></div>
               <div className="cd-timeline-content">
                 <h3>2021 Q4</h3>
-                <p>Land Sale (Inner City)</p>
+                <p>Land Mint (Mint Round: #1)</p>
                 <p>Protocols Development</p>
                 <p>Andverse World Infrastructure Development</p>
                 <p>3D Assets Open Co-operation</p>
@@ -276,7 +276,7 @@ function Roadmap() {
               <div className="cd-timeline-img cd-location"></div>
               <div className="cd-timeline-content">
                 <h3>2022 Q1</h3>
-                <p>Land Sale (Outer City)</p>
+                <p>Land Mint (Mint Round: #2)</p>
                 <p>World Environment & Buildings Development</p>
                 <p>Lands-Estates Manager Launch</p>
                 <p>New Andverse Map Generator</p>

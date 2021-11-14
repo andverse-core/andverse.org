@@ -376,13 +376,17 @@ Roadmap
 }
 
 #page-community {
-
+  @apply h-full;
   .community-container {
     @apply grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4;
-
+    @apply mt-20;
     .item {
-      img {
-        @apply w-20 h-20;
+      @apply py-10;
+      a {
+        @apply flex flex-col items-center;
+      }
+      .icon {
+        @apply w-10 h-10 mb-5;
       }
     }
   }

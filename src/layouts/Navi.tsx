@@ -14,6 +14,7 @@ import {
 import { SiteLogo, SiteLogoText } from 'icons'
 
 const navItems = [
+  { name: 'Home', href: '/', icon: HomeIcon, exact: true },
   { name: 'Market', href: 'https://market.andverse.org', icon: ShoppingBagIcon, exact: true },
   { name: 'Explorer', href: '/explorer', icon: CubeTransparentIcon, exact: false },
   { name: 'Community', href: '/community', icon: HomeIcon, exact: true },

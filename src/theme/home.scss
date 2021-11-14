@@ -404,8 +404,9 @@ Roadmap
 }
 
 #page-roadmap {
+  @apply bg-gray-900;
   .container {
-    @apply px-20 py-20;
+    @apply px-1 py-2;
     h2 {
       @apply text-3xl;
     }

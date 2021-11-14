@@ -52,8 +52,17 @@ function Main() {
         </div>
 
         <div className="flex flex-col">
-          <a href={"https://demo.andverse.org"}><p className="m-6 px-6 py-3 bg-green-400 rounded-xl text-white">3D demo</p></a>
-          <p className={"max-w-md"}>(Currently supports oculus devices, if you have any problems with other devices, please give us feedback through the <a className={"text-green-500"} href={"/community"}>community</a>.)</p>
+          <a href={'https://demo.andverse.org'}>
+            <p className="m-6 px-6 py-3 bg-green-400 rounded-xl text-white">3D demo</p>
+          </a>
+          <p className={'max-w-md'}>
+            (Currently supports oculus devices, if you have any problems with other devices, please give us feedback
+            through the{' '}
+            <a className={'text-green-500'} href={'/community'}>
+              community
+            </a>
+            .)
+          </p>
         </div>
       </div>
     </main>

@@ -12,6 +12,14 @@
   }
 }
 
+#page-home {
+  .tip {
+    @apply max-w-full py-4 px-10;
+    @apply text-center text-white;
+    @apply bg-gray-700;
+  }
+}
+
 #page-home .features {
   @apply relative bg-gray-300 dark:bg-gray-900 py-16 sm:py-24;
   > div {
@@ -391,7 +399,6 @@ Roadmap
           @apply w-12 h-12;
         }
       }
-
     }
   }
 }

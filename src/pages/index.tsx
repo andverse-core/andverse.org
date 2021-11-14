@@ -1,4 +1,4 @@
-import React, { Suspense, useRef, Component } from 'react'
+import React, { useRef, Component } from 'react'
 import Head from 'next/head'
 import Footer from 'layouts/Footer'
 import Header from 'layouts/Header'
@@ -10,7 +10,6 @@ import Buildings from 'assets/licensed/buildings.png'
 import Avatars from 'assets/licensed/avatars.png'
 import Galaxy from 'assets/licensed/galaxy.png'
 import Shop from 'assets/licensed/shop.png'
-import { SiteLogo } from 'icons'
 
 import {
   SwitchHorizontalIcon,
@@ -151,12 +150,16 @@ function Main() {
   return (
     <main>
       <canvas id="starfield"></canvas>
-
+      <a href={'https://market.andverse.org'}>
+        <div className={'tip'}>Join the Lind Mint Round #1</div>
+      </a>
       <div className="hero">
         <div className="my-[10vh]">
           {/* <SiteLogo className="w-40 text-white home-spin mb-8" /> */}
           <h3 className="" id="starfield-focus">
-            Andverse<br/> is a decentralized <br/>multi Galaxy metaverse
+            Andverse
+            <br /> is a decentralized <br />
+            multi Galaxy metaverse
           </h3>
         </div>
       </div>

@@ -51,8 +51,9 @@ function Main() {
           </div>
         </div>
 
-        <div className="flex">
-          <p className="m-6 px-6 py-3 bg-gray-500 bg-opacity-25 rounded-xl">Images above are concept preview</p>
+        <div className="flex flex-col">
+          <a href={"https://demo.andverse.org"}><p className="m-6 px-6 py-3 bg-green-400 rounded-xl text-white">3D demo</p></a>
+          <p className={"max-w-md"}>(Currently supports oculus devices, if you have any problems with other devices, please give us feedback through the community.)</p>
         </div>
       </div>
     </main>

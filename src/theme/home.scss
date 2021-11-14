@@ -384,10 +384,14 @@ Roadmap
       @apply py-10;
       a {
         @apply flex flex-col items-center;
+        .icon {
+          @apply w-10 h-10;
+        }
+        svg {
+          @apply w-12 h-12;
+        }
       }
-      .icon {
-        @apply w-10 h-10 mb-5;
-      }
+
     }
   }
 }

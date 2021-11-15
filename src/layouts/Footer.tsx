@@ -4,7 +4,8 @@ import Link from 'next/link'
 const footerNavigation = {
   main: [
     { name: 'Home', href: '/' },
-    { name: 'Documentation', href: 'https://docs.andverse.org' }
+    { name: 'Documentation', href: 'https://docs.andverse.org' },
+    { name: 'Media', href: '/media' }
   ],
   social: [
     // {

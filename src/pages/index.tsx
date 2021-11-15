@@ -151,7 +151,7 @@ function Main() {
     <main>
       <canvas id="starfield"></canvas>
       <a href={'https://market.andverse.org'}>
-        <div className={'tip'}>Join the Lind Mint Round #1</div>
+        <div className={'tip'}>Join the Land Mint Round #1</div>
       </a>
       <div className="hero">
         <div className="my-[10vh]">

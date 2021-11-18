@@ -41,6 +41,11 @@ function Main() {
                 [Download] Andverse KeyNote
               </a>
             </li>
+            <li>
+              <a className={'text-green-500'} href={'https://andverse.oss-cn-beijing.aliyuncs.com/Andverse.pdf'}>
+                [Download] Andverse PDF
+              </a>
+            </li>
           </ul>
         </div>
       </div>

@@ -41,7 +41,7 @@ export default function Navi() {
             <Link href="/">
               <a>
                 <SiteLogo className="h-10" />
-                <SiteLogoText className="h-8 ml-2" />
+                {/* <SiteLogoText className="h-8 ml-2" /> */}
               </a>
             </Link>
           </div>

@@ -56,7 +56,7 @@ const footerNavigation = {
     },
     {
       name: 'Discard',
-      href: 'https://discord.com/invite/6GrtYCvY',
+      href: 'https://discord.gg/NJEtrQKeW5',
       icon: props => (
         <svg width="116" height="116" viewBox="0 0 116 116" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path

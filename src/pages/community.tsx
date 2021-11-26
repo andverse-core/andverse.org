@@ -91,7 +91,7 @@ function Main() {
                   </linearGradient>
                 </defs>
               </svg>
-              <text>Discard</text>
+              <text>Discord</text>
             </a>
           </div>
         </div>

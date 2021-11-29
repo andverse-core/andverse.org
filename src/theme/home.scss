@@ -64,6 +64,19 @@
   }
 }
 
+
+#page-home .networks {
+  @apply relative bg-gray-300 dark:bg-gray-900 py-16 sm:py-24;
+  > div {
+    @apply mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl;
+  }
+  h2 {
+    @apply mt-2 text-3xl font-medium text-gray-900 dark:text-white sm:text-4xl;
+    @extend .gradient_animation;
+  }
+}
+
+
 #page-home .protocols {
   @apply py-16 overflow-hidden lg:py-24;
   > div {

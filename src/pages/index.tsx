@@ -168,10 +168,11 @@ function Main() {
 
       <Features />
       <Protocols />
+      <Networks />
       {/*<Roadmap />*/}
       {/* <Brands /> */}
 
-      <div id="mc_embed_signup" className={'bg-gray-300 w-full dark:bg-gray-900'}>
+      <div id="mc_embed_signup">
         <form
           action="https://andverse.us20.list-manage.com/subscribe/post?u=575bf72372c9aa97321ac7f60&amp;id=586f238bbc"
           method="post"
@@ -374,6 +375,22 @@ function Roadmap() {
             </div>
           </section>
         </div>
+      </div>
+    </div>
+  )
+}
+
+function Networks() {
+  return (
+    <div className="networks">
+      <div>
+      <h2 className="uppercase">We support the following networks</h2>
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div className="flex justify-center items-center text-center">
+          <div className="text-3xl w-64">Newton</div>
+          <div className="text-3xl w-64">Ethereum</div>
+        </div>
+      </div>
       </div>
     </div>
   )

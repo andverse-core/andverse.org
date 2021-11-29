@@ -1,4 +1,4 @@
-import React, { useRef, Component } from 'react'
+import React, { useRef, Component, useState } from 'react'
 import Head from 'next/head'
 import Footer from 'layouts/Footer'
 import Header from 'layouts/Header'
@@ -147,6 +147,8 @@ const protocolsItems = {
 
 function Main() {
   const ref = useRef()
+  const [email, setEmail] = useState('')
+
   return (
     <main>
       <canvas id="starfield"></canvas>
@@ -168,6 +170,48 @@ function Main() {
       <Protocols />
       {/*<Roadmap />*/}
       {/* <Brands /> */}
+
+      <div id="mc_embed_signup" className={'bg-gray-300 w-full dark:bg-gray-900'}>
+        <form
+          action="https://andverse.us20.list-manage.com/subscribe/post?u=575bf72372c9aa97321ac7f60&amp;id=586f238bbc"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          className="validate"
+          target="_blank"
+        >
+          <div id="mc_embed_signup_scroll">
+            <div className={'w-full text-center'}>
+              <h2>Subscribe</h2>
+            </div>
+            <div className="mc-field-group">
+              <label htmlFor="mce-EMAIL">Email Address</label>
+              <input
+                type="email"
+                name="EMAIL"
+                className="required email"
+                id="mce-EMAIL"
+                onChange={e => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="mc-field-group">
+              <label htmlFor="mce-MMERGE1">How do you know Andverse? </label>
+              <select name="MMERGE1" className="select" id="mce-MMERGE1">
+                <option value="">------</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Telegram">Telegram</option>
+                <option value="Discord">Discord</option>
+                <option value="Facebook">Facebook</option>
+                <option value="WeChat">WeChat</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div className="foot">
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" />
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
   )
 }

@@ -412,3 +412,37 @@ Roadmap
     }
   }
 }
+
+#mc_embed_signup {
+  width: 100%;
+}
+
+#mc_embed_signup_scroll {
+  @apply flex flex-col p-16 justify-start items-center;
+
+  h2 {
+    @apply mt-2 text-3xl font-medium text-gray-900 dark:text-white sm:text-4xl;
+    @extend .gradient_animation;
+  }
+
+  .mc-field-group {
+    @apply flex flex-col items-center text-left mt-6 w-full;
+
+    .email {
+      @apply w-1/3 border-gray-300 rounded-lg p-2 mt-2;
+    }
+
+    .select {
+      @apply w-1/3 py-2 px-3 mt-2 border-gray-300 rounded-lg;
+    }
+  }
+  .foot {
+    @apply text-white text-center bg-gray-600 p-3 rounded-lg w-1/5 mt-10;
+    @apply cursor-pointer;
+
+    input {
+      @apply text-white bg-gray-600;
+      @apply cursor-pointer;
+    }
+  }
+}

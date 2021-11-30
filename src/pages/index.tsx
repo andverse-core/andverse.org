@@ -10,6 +10,8 @@ import Buildings from 'assets/licensed/buildings.png'
 import Avatars from 'assets/licensed/avatars.png'
 import Galaxy from 'assets/licensed/galaxy.png'
 import Shop from 'assets/licensed/shop.png'
+import NewtonLogo from 'assets/networks/newton.png'
+import EthereumLogo from 'assets/networks/ethereum.png'
 
 import {
   SwitchHorizontalIcon,
@@ -385,10 +387,20 @@ function Networks() {
     <div className="networks">
       <div>
       <h2 className="uppercase">We support the following networks</h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="flex justify-center items-center text-center">
-          <div className="text-3xl w-64">Newton</div>
-          <div className="text-3xl w-64">Ethereum</div>
+      <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div className="flex  flex-auto flex-wrap justify-center items-center text-center">
+          <div className="iconbox">
+            <Image
+              src={NewtonLogo}
+            />
+            <span>Newton</span>
+          </div>
+          <div className="iconbox">
+            <Image
+              src={EthereumLogo}
+            />
+            <span>Ethereum</span>
+          </div>
         </div>
       </div>
       </div>

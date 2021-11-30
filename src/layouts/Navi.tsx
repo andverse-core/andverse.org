@@ -11,7 +11,8 @@ import {
   DocumentTextIcon,
   XIcon,
   MapIcon,
-  AnnotationIcon
+  AnnotationIcon,
+  DocumentReportIcon
 } from '@heroicons/react/outline'
 import { SiteLogo, SiteLogoText } from 'icons'
 
@@ -21,7 +22,8 @@ const navItems = [
   { name: 'Explorer', href: '/explorer', icon: CubeTransparentIcon, exact: false },
   { name: 'Community', href: '/community', icon: AnnotationIcon, exact: true },
   { name: 'RoadMap', href: '/roadmap', icon: MapIcon, exact: true },
-  { name: 'Documentation', href: 'https://docs.andverse.org', icon: DocumentTextIcon, exact: false }
+  { name: 'Documentation', href: 'https://docs.andverse.org', icon: DocumentTextIcon, exact: false },
+  { name: 'Blog', href: 'https://blog.andverse.org', icon: DocumentReportIcon, exact: false }
 ]
 
 export default function Navi() {

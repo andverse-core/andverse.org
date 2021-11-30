@@ -386,23 +386,19 @@ function Networks() {
   return (
     <div className="networks">
       <div>
-      <h2 className="uppercase">We support the following networks</h2>
-      <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="flex  flex-auto flex-wrap justify-center items-center text-center">
-          <div className="iconbox">
-            <Image
-              src={NewtonLogo}
-            />
-            <span>Newton</span>
-          </div>
-          <div className="iconbox">
-            <Image
-              src={EthereumLogo}
-            />
-            <span>Ethereum</span>
+        <h2 className="uppercase">We support the following networks</h2>
+        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:py-16 lg:px-8">
+          <div className="flex  flex-auto flex-wrap justify-center items-center text-center">
+            <div className="iconbox">
+              <Image src={NewtonLogo} />
+              <span>Newton</span>
+            </div>
+            <div className="iconbox">
+              <Image src={EthereumLogo} />
+              <span>Ethereum</span>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   )

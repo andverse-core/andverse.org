@@ -27,6 +27,14 @@ const pageSettings = {
   description: ''
 }
 
+const CheckIcon = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="green">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+    </svg>
+  )
+}
+
 function Main() {
   const ref = useRef()
   return (
@@ -51,9 +59,15 @@ function Roadmap() {
               <div className="cd-timeline-img cd-location"></div>
               <div className="cd-timeline-content">
                 <h3>2021 Q4</h3>
-                <p>1. Andverse market launched</p>
-                <p>2. Land Mint Round #1</p>
-                <p>3. Build the 2D/3D map of Andverse Planet #3</p>
+                <p>
+                  1. Andverse market launched <CheckIcon />
+                </p>
+                <p>
+                  2. Land Mint Round #1 <CheckIcon />
+                </p>
+                <p>
+                  3. Build the 2D/3D map of Andverse Planet #3 <CheckIcon />
+                </p>
               </div>
             </div>
 
@@ -84,8 +98,11 @@ function Roadmap() {
               <div className="cd-timeline-content">
                 <h3>2022 Q3</h3>
                 <p>1. MMO Players Link Launch</p>
+                <br />
                 <p>2. DID Standard</p>
+                <br />
                 <p>3. Avatar Market Launch</p>
+                <br />
                 <p>4. Custom Avatars</p>
               </div>
             </div>
@@ -95,7 +112,9 @@ function Roadmap() {
               <div className="cd-timeline-content">
                 <h3>2022 Q4</h3>
                 <p>1. Andverse World API & SDK Release</p>
+                <br />
                 <p>2. DAO Launch</p>
+                <br />
                 <p>3. Andverse World Builder DApp</p>
               </div>
             </div>

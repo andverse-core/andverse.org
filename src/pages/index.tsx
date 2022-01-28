@@ -163,7 +163,7 @@ function Main() {
           <h3 className="" id="starfield-focus">
             Andverse
             <br /> is a decentralized <br />
-            multi Galaxy metaverse
+            multigalactic metaverse
           </h3>
         </div>
       </div>

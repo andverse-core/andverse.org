@@ -17,7 +17,7 @@ import {
 import { SiteLogo, SiteLogoText } from 'icons'
 
 const navItems = [
-  { name: 'Home', href: '/', icon: HomeIcon, exact: true },
+  // { name: 'Home', href: '/', icon: HomeIcon, exact: true },
   { name: 'Market', href: 'https://market.andverse.org', icon: ShoppingBagIcon, exact: true },
   { name: 'Explorer', href: '/explorer', icon: CubeTransparentIcon, exact: false },
   { name: 'Community', href: '/community', icon: AnnotationIcon, exact: true },
@@ -43,7 +43,7 @@ export default function Navi() {
             <Link href="/">
               <a>
                 <SiteLogo className="h-10" />
-                {/* <SiteLogoText className="h-8 ml-2" /> */}
+                <SiteLogoText className="h-8 ml-2" />
               </a>
             </Link>
           </div>

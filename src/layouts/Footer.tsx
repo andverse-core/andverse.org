@@ -134,7 +134,7 @@ export default function Footer() {
               </Link>
             ))}
           </div>
-          <p>&copy; 2021 {SITE_NAME}.</p>
+          <p>&copy; {new Date().getFullYear()} {SITE_NAME}.</p>
         </div>
       </footer>
       <section className="w-full p-5 lg:px-24 fixed bottom-0 hidden">

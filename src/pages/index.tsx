@@ -154,9 +154,9 @@ function Main() {
   return (
     <main>
       <canvas id="starfield"></canvas>
-      <a href={'https://market.andverse.org'}>
-        <div className={'tip'}>Join the Land Mint Round #1</div>
-      </a>
+      
+      <div className={'tip'}><a href={'https://play.testnet.andverse.org'}>Andverse Explorer V0.1.0 Testnet has been released!</a> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;<a href={'https://market.andverse.org'}>Join the Land Mint Round #1</a></div>
+      
       <div className="hero">
         <div className="my-[10vh]">
           {/* <SiteLogo className="w-40 text-white home-spin mb-8" /> */}

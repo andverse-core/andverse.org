@@ -35,18 +35,6 @@ function Main() {
           <h2 className="text-3xl">Media</h2>
         </div>
         <div className={'content'}>
-          <ul>
-            <li>
-              <a className={'text-green-500'} href={'https://andverse.oss-cn-beijing.aliyuncs.com/Andverse.key'}>
-                [Download] Andverse KeyNote
-              </a>
-            </li>
-            <li>
-              <a className={'text-green-500'} href={'https://andverse.oss-cn-beijing.aliyuncs.com/Andverse.pdf'}>
-                [Download] Andverse PDF
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </main>

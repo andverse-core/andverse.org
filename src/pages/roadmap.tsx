@@ -91,20 +91,32 @@ function Roadmap() {
                         <h3>2023</h3>
                         <p>Focus on andverse civilization I</p>
                         <p>1. DID Standard</p>
-                        <p>2. Explorer-Web Mainnet launched Andverse Explorer-Desktop(Windows/MacOS)  Mainnet launched</p>
-                        <p>3. Market Launch</p>
-                        <p>4. Andverse SDK Release</p>
-                        <p>5. DAO Launch</p>
-                        <p>6. Andverse Studio Release</p>
+                        <p>2. Explorer-Web Mainnet launch</p>
+                        <p>3. Andverse Explorer-Desktop(Windows/MacOS)  Mainnet launch</p>
+                        <p>4. Market Launch</p>
+                        <p>5. Andverse SDK Release</p>
+                        <p>6. DAO Launch</p>
+                        <p>7. Andverse Studio Release</p>
 
-                        <p>7. Build brand/IP metaverse</p>
-                        <p>8. Accerate the trade of digital assets</p>
-                        <p>9. Content Building such as AV, Live Streaming</p>
+                        <p>8. Build brand/IP metaverse</p>
+                        <p>9. Accerate the trade of digital assets</p>
+                        <p>10. Content Building such as AV, Live Streaming</p>
                         
                     </div>
                 </div>
 
-                
+
+                <div className="cd-timeline-block">
+                    <div className="cd-timeline-img cd-location"></div>
+                    <div className="cd-timeline-content">
+                        <h3>2024</h3>
+                        <p>1. Explorer-Mobile(iOS/Android) Release</p>
+                        <p>2. Explorer-VR Release</p>
+                        <p>3. Game Engine Release</p>
+                        <p>4. AI/ML Support</p>
+                    </div>
+                </div>
+
 
 
           </section>

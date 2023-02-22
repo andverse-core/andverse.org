@@ -51,21 +51,15 @@ function Main() {
 
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
           <div>
             <div className="max-w-md">
-              <a href={'https://sandbox.andverse.org/'}>
-                <p className="m-6 px-6 py-3 bg-green-400 rounded-xl text-white">3D demo with nft</p>
+              <a href={'https://play.testnet.andverse.org/'}>
+                <p className="m-6 px-6 py-3 bg-green-400 rounded-xl text-white">Open Now</p>
               </a>
             </div>
           </div>
-
-          <div>
-            <div className="max-w-md">
-              <a href={'https://demo.andverse.org'}>
-                <p className="m-6 px-6 py-3 bg-green-400 rounded-xl text-white">3D demo with VR</p>
-              </a>
-            </div>
-          </div>
+          
         </div>
 
         <div className="flex flex-col">

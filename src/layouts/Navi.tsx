@@ -18,8 +18,8 @@ import { SiteLogo, SiteLogoText } from 'icons'
 
 const navItems = [
   // { name: 'Home', href: '/', icon: HomeIcon, exact: true },
-  { name: 'Market', href: 'https://market.andverse.org', icon: ShoppingBagIcon, exact: true },
-  { name: 'Explorer', href: '/explorer', icon: CubeTransparentIcon, exact: false },
+  { name: 'Planet3', href: 'https://planet3.andverse.org/map/', icon: ShoppingBagIcon, exact: true },
+  { name: 'Testnet', href: '/testnet', icon: CubeTransparentIcon, exact: false },
   { name: 'Community', href: '/community', icon: AnnotationIcon, exact: true },
   { name: 'RoadMap', href: '/roadmap', icon: MapIcon, exact: true },
   { name: 'Documentation', href: 'https://docs.andverse.org', icon: DocumentTextIcon, exact: false },

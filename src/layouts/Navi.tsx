@@ -18,7 +18,7 @@ import { SiteLogo, SiteLogoText } from 'icons'
 
 const navItems = [
   // { name: 'Home', href: '/', icon: HomeIcon, exact: true },
-  { name: 'Planet#3', href: 'https://planet3.andverse.org/map/', icon: ShoppingBagIcon, exact: true },
+  { name: 'Planet #3', href: 'https://planet3.andverse.org/map/', icon: ShoppingBagIcon, exact: true },
   { name: 'Testnet', href: '/testnet', icon: CubeTransparentIcon, exact: false },
   { name: 'Community', href: '/community', icon: AnnotationIcon, exact: true },
   { name: 'RoadMap', href: '/roadmap', icon: MapIcon, exact: true },
